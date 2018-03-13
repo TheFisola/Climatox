@@ -1,0 +1,108 @@
+<!-- NAME OF WEATHER LOCATION ROW-->
+<div [hidden]="myWeather">
+    <div class="loader" ></div>
+  </div>
+<div *ngIf="myWeather">
+<div class="row"> 
+<div class="col-sm-2">
+  
+</div>
+
+<div class="col-sm-8">
+
+    <div class="row">
+
+        <div class="col-sm-4">
+
+        </div>
+
+        <div class="col-sm-4">
+
+         <i><h1>{{myWeather.cityName | uppercase}}</h1></i>
+
+        </div>
+
+        <div class="col-sm-4">
+  
+        </div>
+
+    </div>
+
+</div>
+
+</div>
+
+<br>
+<br>
+
+<!-- WEATHER ICON ROW-->
+
+<div class="row">
+<div class="col-sm-2">
+
+</div>
+
+<div class="col-sm-8 text-center">
+
+   <i  style="font-size:200px" class="owi owi-{{myWeather.icon}}"></i>
+
+</div>
+
+<div class="col-sm-2">
+
+</div>
+
+</div>
+
+<!-- WEATHER DETAILS ROW-->
+<div class="row">
+  <div class="col-sm-2">
+   
+  </div>
+
+  <div class="col-sm-8">
+
+      <div class="row">
+
+        <div class="col-sm-4">
+
+             <h2>{{currentTime}}</h2>
+
+         </div>
+
+         <div class="col-sm-4">
+
+             <h2>{{myWeather.temp}}°F</h2>
+
+         </div>
+
+        <div class="col-sm-4">
+
+            <h2>{{myWeather.weatherKind | titlecase}}</h2>
+
+        </div>
+
+     </div>
+
+ </div>
+
+<div class="col-sm-2">
+  
+</div>
+</div>
+
+<br>
+<br>
+</div>
+
+<!--TODO: Remove this after successful implementation of the weather search component-->
+<div class="row">
+    <div class="wrapper col-sm-12 img-responsive">
+    <form novalidate (ngSubmit)="onSubmit(f)" #f="ngForm"> 
+        <input name="city" ngModel class="search" type="text" id="search" placeholder="Check the Temperatures of other Cities" />
+        <input class="submit" type="submit" value=" "/>
+    
+    </form>
+    </div>
+    
+</div>
