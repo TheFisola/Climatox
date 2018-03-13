@@ -3,8 +3,11 @@ The app is till a work in progress
 
 # App features
 -User can view the weather in his/her current location.
+
 -User can toggle the temperature unit (Celsius or Fahrenheit).
+
 -Weather icon or background image will change depending on weather conditions.
+
 -User can search for weather information of other places.
     
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.6.5.
