@@ -1,5 +1,5 @@
 # Climatox
-The app is till a work in progress
+The app is still a work in progress
 
 # App features
 -User can view the weather in his/her current location.
